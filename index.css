@@ -20,6 +20,10 @@ body {
 h1 {
   text-align: center;
 }
+.bold,
+.year {
+  font-weight: bolder;
+}
 
 #imgart {
   float: left;
@@ -34,7 +38,7 @@ h1 {
   }
   header {
     padding: 20px 40px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: larger;
   }
 
@@ -47,9 +51,7 @@ h1 {
   .article2,
   .article3,
   .article4 {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 20px;
+    padding-top: 2rem;
   }
 
   .skillEdu {
