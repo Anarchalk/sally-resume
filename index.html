@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sally Student</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
     <div id="application-root"></div>
@@ -19,10 +25,16 @@
           <div className="container">
             <section className="content">
               <header>{props.children}</header>
-              <div className="article 1">
+              <div className="article1">
                 <article>
                   <h1>Student</h1>
-                  <div className="inner 1">
+                  <div className="inner1">
+                    <img
+                      src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+                      alt="a woman portrait"
+                      id="imgart"
+                      height="100"
+                    />
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Vitae veritatis sed laborum, accusantium ut dolore
@@ -30,34 +42,31 @@
                       voluptatibus veniam doloribus consectetur quia! Quae,
                       eveniet.
                     </p>
-                    <img
-                      src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
-                      alt="Smiley face"
-                      height="100"
-                    />
                   </div>
                 </article>
               </div>
-              <div className="article 2">
+              <div className="article2">
                 <article>
                   <h1>Contact Info</h1>
 
-                  <section>
+                  <section className="contact">
                     <address>
-                      Fairview Park Ave, <br></br> Philadelphia, PA00000 USA
+                      Fairview Park Ave, <br></br> Philadelphia, PA
                     </address>
                     Email:
                     <a href="mailto:sally.thinkful@gmail.com">
                       sally.thinkful@gmail.com
                     </a>
-                    <a> Phone:888-88-8888</a>
+                    <br></br>
+                    Phone:
+                    <a href="Phone:888-88-8888">888-88-8888</a>
                   </section>
                 </article>
               </div>
-              <div className="article 3">
+              <div className="article3">
                 <article>
                   <h1> Employment History</h1>
-                  <div className="article 3">
+                  <div className="article3a">
                     <p> 2015- Current</p>
                     <p>Web Developer, ABC company</p>
                     <p>
@@ -68,7 +77,7 @@
                       eveniet.
                     </p>
                   </div>
-                  <div className="article 3a">
+                  <div className="article3b">
                     <p> 2010- 2015</p>
                     <p> Assistant Web Developer, TechEd company</p>
                     <p>
@@ -81,27 +90,28 @@
                   </div>
                 </article>
               </div>
+              <section className="skillEdu">
+                <div className="article4">
+                  <article>
+                    <h1>Skills</h1>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Javascript</li>
+                      <li>jQuery</li>
+                      <li>React</li>
+                    </ul>
+                  </article>
+                </div>
 
-              <div className="article 4">
-                <article>
-                  <h1>Skills</h1>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                    <li>React</li>
-                  </ul>
-                </article>
-              </div>
-
-              <div className="article 5">
-                <article>
-                  <h1>Education</h1>
-                  <p>2006-2010 Jefferson University, CA</p>
-                  <p>1998-2010 Jefferson Highschool, CA</p>
-                </article>
-              </div>
+                <div className="article 5">
+                  <article>
+                    <h1>Education</h1>
+                    <p>2006-2010 Jefferson University, CA</p>
+                    <p>1998-2010 Jefferson Highschool, CA</p>
+                  </article>
+                </div>
+              </section>
             </section>
           </div>
         );

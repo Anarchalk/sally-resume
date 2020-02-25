@@ -1,0 +1,41 @@
+/* For mobile phones: */
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+.container {
+  flex: 1 0 auto;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Quattrocento Sans", sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  text-align: center;
+}
+
+#imgart {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* tablets: */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0px 40px;
+  }
+
+  .article3 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .skillEdu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
